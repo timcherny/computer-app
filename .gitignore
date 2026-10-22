@@ -1,0 +1,18 @@
+node_modules/
+dist/
+release/
+storybook-static/
+.vercel/
+.DS_Store
+*.log
+*.tgz
+.env
+.env.*
+!.env.example
+
+# Signing credentials must remain local
+*.p12
+*.pfx
+*.key
+*.pem
+*.mobileprovision

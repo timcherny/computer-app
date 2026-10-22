@@ -1,0 +1,26 @@
+/* Use installed Chip fonts for local development. No font binaries are bundled.
+ * Consumers may provide webfont faces or override the public font-family tokens.
+ */
+@font-face {
+  font-family: 'Computer Chip Text';
+  src: local('Chip Text Variable'), local('ChipTextVarVar-Regular');
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Computer Chip Display';
+  src: local('Chip Display Variable'), local('ChipDispVarlayVar-Regular');
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Computer Chip Mono';
+  src: local('Chip Mono Regular'), local('ChipMono-Regular');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}

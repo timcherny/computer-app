@@ -1,0 +1,94 @@
+* { box-sizing: border-box; }
+html, body, #root { min-width: 320px; height: 100%; margin: 0; }
+body {
+  background: var(--computer-color-background);
+  color: var(--computer-color-text);
+  font-family: var(--computer-font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+button, a, textarea { -webkit-app-region: no-drag; }
+.computer-app { --app-nav-controls-reserve: calc(2 * var(--computer-icon-button-size) + var(--computer-space-1) + 2 * var(--computer-space-2)); position: relative; height: 100dvh; display: flex; overflow: hidden; }
+.computer-app[data-desktop] { --app-nav-controls-reserve: calc(5.5rem + 2 * var(--computer-icon-button-size) + var(--computer-space-1) + var(--computer-space-2) - var(--computer-nav-panel-collapsed-width)); }
+.app-sidebar { --computer-nav-panel-height: 100%; }
+.app-sidebar[hidden] { display: none; }
+.app-sidebar-backdrop { display: none; }
+.app-workspace { display: flex; flex-direction: column; flex: 1; min-width: 0; overflow: hidden; background: var(--computer-color-bg-secondary); }
+.app-sidebar .computer-nav-panel__header { justify-content: end; padding-inline: var(--computer-space-2); }
+.app-sidebar[data-desktop] .computer-nav-panel__header { padding-left: 5.5rem; }
+.app-toolbar { display: flex; align-items: center; gap: var(--computer-space-1); }
+.app-floating-nav-chrome { position: absolute; z-index: 2; top: 0; left: var(--computer-nav-panel-collapsed-width); padding: var(--computer-space-1-5) var(--computer-space-2); }
+.computer-app[data-desktop] .app-floating-nav-chrome { left: 0; padding-left: 5.5rem; -webkit-app-region: no-drag; user-select: none; }
+.computer-app[data-desktop] .app-sidebar[data-collapsed] { padding-top: calc(var(--computer-nav-panel-header-height) + var(--computer-nav-panel-collapsed-padding)); }
+.app-main { position: relative; flex: 1; display: flex; min-height: 0; min-width: 0; }
+/* Native title-bar hit area; header actions stay above it and opt out of dragging. */
+.computer-app[data-desktop] .computer-chat-topbar::before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  inset: 0 0 auto;
+  height: 48px;
+  -webkit-app-region: drag;
+  pointer-events: auto;
+  user-select: none;
+}
+/* Electron drag regions must not overlap floating controls, even behind them. */
+.computer-app[data-desktop][data-sidebar-open="false"] .computer-chat-topbar::before { left: var(--app-nav-controls-reserve); }
+.app-nav-gil { --computer-nav-item-gap: var(--computer-space-2); }
+.app-nav-sessions:not([hidden]) { display: grid; gap: var(--computer-space-1-5); }
+.app-nav-drop-zone, .app-nav-chat { display: grid; gap: var(--computer-space-1-5); position: relative; min-width: 0; }
+.app-nav-drop-zone { min-height: var(--computer-nav-item-height); }
+.app-nav-chat { -webkit-app-region: no-drag; user-select: none; }
+.app-nav-chat img { -webkit-user-drag: none; }
+.app-nav-chat[data-dragging], .app-nav-chat[data-dragging] * { cursor: grabbing; }
+.app-nav-announcement { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.app-nav-chat[data-dragging] { opacity: var(--computer-opacity-disabled); }
+.app-nav-chat[data-drop-before]::before, .app-nav-drop-zone[data-drop-end]::after {
+  content: ''; position: absolute; inset-inline: var(--computer-space-2); height: 2px;
+  background: var(--computer-color-focus); border-radius: var(--computer-radius-sm); pointer-events: none;
+}
+.app-nav-chat[data-drop-before]::before { top: calc(-1 * var(--computer-space-1-5) / 2); }
+.app-nav-drop-zone[data-drop-end]::after { bottom: calc(-1 * var(--computer-space-1-5) / 2); }
+.app-profile {
+  position: fixed;
+  inset: auto auto 4.25rem var(--computer-space-4);
+}
+.app-chat-actions {
+  position: fixed;
+  inset: calc(var(--computer-chat-topbar-inset) + var(--computer-icon-button-size)) var(--computer-chat-topbar-inset) auto auto;
+}
+@media (max-width: 700px) {
+  .app-sidebar:not([data-collapsed]) { position: absolute; z-index: 3; inset: 0 auto 0 0; width: min(var(--computer-nav-panel-width), calc(100vw - 64px)); }
+  .app-sidebar-backdrop { display: block; position: absolute; z-index: 2; inset: 0; border: 0; background: var(--computer-color-transparent); }
+}
+
+.app-chat-pane { position: relative; display: flex; flex: 1; min-width: 0; min-height: 0; }
+.app-main[data-canvas-open] .app-chat-pane { flex: 0 0 clamp(340px, var(--app-chat-size, clamp(340px, 38%, 480px)), calc(100% - 320px)); border-right: var(--computer-border-width) solid var(--computer-color-border-secondary); }
+.app-split-resizer { position: absolute; z-index: 5; inset-block: 0; right: calc(-1 * var(--computer-space-1)); width: var(--computer-space-2); cursor: col-resize; touch-action: none; -webkit-app-region: no-drag; }
+.app-split-resizer:focus-visible { outline: var(--computer-focus-width) solid var(--computer-color-focus); outline-offset: calc(-1 * var(--computer-focus-width)); }
+.app-main[data-resizing-split], .app-main[data-resizing-split] * { cursor: col-resize !important; user-select: none; }
+.app-canvas { flex: 1; min-width: 0; }
+.app-main[data-canvas-expanded] .app-chat-pane { display: none; }
+.app-chat-pane .computer-chat-topbar__actions > :first-child { anchor-name: --chat-more; }
+.app-canvas .computer-canvas-tabs__add .computer-icon-button { anchor-name: --canvas-add; }
+.app-chat-pane .computer-chat-topbar__canvas-opener { anchor-name: --canvas-opener; }
+.app-chat-actions { inset: auto; position-anchor: --chat-more; top: anchor(bottom); left: anchor(right); transform: translateX(-100%); }
+.app-canvas-add-menu { position: fixed; position-anchor: --canvas-add; top: anchor(bottom); left: min(anchor(left), calc(100vw - var(--computer-menu-width) - var(--computer-space-2))); }
+.computer-app[data-desktop] .app-canvas > .computer-canvas-tabs { position: relative; }
+.computer-app[data-desktop] .app-canvas > .computer-canvas-tabs::before {
+  content: ''; position: absolute; inset: 0 0 0 var(--app-canvas-drag-left, 0px);
+  -webkit-app-region: drag; pointer-events: none;
+}
+.computer-app[data-desktop] .app-canvas > .computer-canvas-tabs > * { position: relative; }
+@media (max-width: 900px) { .app-main[data-canvas-open] .app-chat-pane { display: none; } }
+/* Keep the conversation mounted when switching between full-width tabs. */
+.app-main[data-chat-tab-active] .app-chat-pane {
+  display: flex; position: absolute; z-index: 1;
+  inset: var(--computer-canvas-tabs-height) 0 0;
+  border: 0;
+}
+.computer-app[data-sidebar-open="false"] .app-main[data-canvas-expanded] .computer-canvas-tabs { padding-left: var(--app-nav-controls-reserve); }
+.computer-app[data-desktop][data-sidebar-open="false"] .app-main[data-canvas-expanded] { --app-canvas-drag-left: var(--app-nav-controls-reserve); }
+@media (max-width: 900px) {
+  .computer-app[data-sidebar-open="false"] .app-main[data-canvas-open] .computer-canvas-tabs { padding-left: var(--app-nav-controls-reserve); }
+  .computer-app[data-desktop][data-sidebar-open="false"] .app-main[data-canvas-open] { --app-canvas-drag-left: var(--app-nav-controls-reserve); }
+}

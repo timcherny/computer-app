@@ -1,0 +1,1254 @@
+{
+  "fileKey": "rLRBVEqB1TSV2dHM34lKEZ",
+  "fileName": "Operator",
+  "capturedAt": "2026-10-20",
+  "foundations": {
+    "collections": [
+      {
+        "id": "VariableCollectionId:6363:15483",
+        "name": "Operator",
+        "modes": [
+          {
+            "name": "Light",
+            "modeId": "6363:0"
+          },
+          {
+            "name": "Dark",
+            "modeId": "9002:2"
+          }
+        ],
+        "defaultModeId": "6363:0",
+        "count": 20
+      }
+    ],
+    "variables": [
+      {
+        "id": "VariableID:6363:15484",
+        "name": "✦/bg/primary",
+        "type": "COLOR",
+        "collectionId": "VariableCollectionId:6363:15483",
+        "values": {
+          "6363:0": {
+            "r": 0.95686274766922,
+            "g": 0.95686274766922,
+            "b": 0.95686274766922,
+            "a": 1
+          },
+          "9002:2": {
+            "r": 0.10980392247438431,
+            "g": 0.10980392247438431,
+            "b": 0.10980392247438431,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:6363:15552",
+        "name": "✦/bg/pressed",
+        "type": "COLOR",
+        "collectionId": "VariableCollectionId:6363:15483",
+        "values": {
+          "6363:0": {
+            "r": 0.9047663807868958,
+            "g": 0.9047663807868958,
+            "b": 0.9047663807868958,
+            "a": 1
+          },
+          "9002:2": {
+            "r": 0.19607843458652496,
+            "g": 0.19607843458652496,
+            "b": 0.19607843458652496,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:6364:3491",
+        "name": "✦/bg/secondary",
+        "type": "COLOR",
+        "collectionId": "VariableCollectionId:6363:15483",
+        "values": {
+          "6363:0": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "9002:2": {
+            "r": 0.0784313753247261,
+            "g": 0.0784313753247261,
+            "b": 0.0784313753247261,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:6364:3492",
+        "name": "✦/text/primary",
+        "type": "COLOR",
+        "collectionId": "VariableCollectionId:6363:15483",
+        "values": {
+          "6363:0": {
+            "r": 0.12941177189350128,
+            "g": 0.11764705926179886,
+            "b": 0.125490203499794,
+            "a": 1
+          },
+          "9002:2": {
+            "r": 0.95686274766922,
+            "g": 0.95686274766922,
+            "b": 0.95686274766922,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:6364:3493",
+        "name": "✦/text/secondary",
+        "type": "COLOR",
+        "collectionId": "VariableCollectionId:6363:15483",
+        "values": {
+          "6363:0": {
+            "r": 0.5764706134796143,
+            "g": 0.5764706134796143,
+            "b": 0.5764706134796143,
+            "a": 1
+          },
+          "9002:2": {
+            "r": 0.6549019813537598,
+            "g": 0.6549019813537598,
+            "b": 0.6549019813537598,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:6364:4805",
+        "name": "✦/border/primary",
+        "type": "COLOR",
+        "collectionId": "VariableCollectionId:6363:15483",
+        "values": {
+          "6363:0": {
+            "r": 0.8980392217636108,
+            "g": 0.8980392217636108,
+            "b": 0.8980392217636108,
+            "a": 1
+          },
+          "9002:2": {
+            "r": 0.2549019753932953,
+            "g": 0.2549019753932953,
+            "b": 0.2549019753932953,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:6364:4926",
+        "name": "✦/border/secondary",
+        "type": "COLOR",
+        "collectionId": "VariableCollectionId:6363:15483",
+        "values": {
+          "6363:0": {
+            "r": 0.9600548148155212,
+            "g": 0.9600548148155212,
+            "b": 0.9600548148155212,
+            "a": 1
+          },
+          "9002:2": {
+            "r": 0.1764705926179886,
+            "g": 0.1764705926179886,
+            "b": 0.1764705926179886,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:6393:4531",
+        "name": "✦/text/active",
+        "type": "COLOR",
+        "collectionId": "VariableCollectionId:6363:15483",
+        "values": {
+          "6363:0": {
+            "r": 0,
+            "g": 0.5607843399047852,
+            "b": 0.9411764740943909,
+            "a": 1
+          },
+          "9002:2": {
+            "r": 0.686274528503418,
+            "g": 0.686274528503418,
+            "b": 0.686274528503418,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:6580:59301",
+        "name": "✦/bg/inverse/primary",
+        "type": "COLOR",
+        "collectionId": "VariableCollectionId:6363:15483",
+        "values": {
+          "6363:0": {
+            "r": 0.12941177189350128,
+            "g": 0.11764705926179886,
+            "b": 0.125490203499794,
+            "a": 1
+          },
+          "9002:2": {
+            "r": 0.95686274766922,
+            "g": 0.95686274766922,
+            "b": 0.95686274766922,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:6580:59302",
+        "name": "✦/text/inverse/primary",
+        "type": "COLOR",
+        "collectionId": "VariableCollectionId:6363:15483",
+        "values": {
+          "6363:0": {
+            "r": 0.95686274766922,
+            "g": 0.95686274766922,
+            "b": 0.95686274766922,
+            "a": 1
+          },
+          "9002:2": {
+            "r": 0.12156862765550613,
+            "g": 0.12156862765550613,
+            "b": 0.12156862765550613,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:6580:59303",
+        "name": "✦/bg/inverse/pressed",
+        "type": "COLOR",
+        "collectionId": "VariableCollectionId:6363:15483",
+        "values": {
+          "6363:0": {
+            "r": 0.19623272120952606,
+            "g": 0.18304318189620972,
+            "b": 0.19183622300624847,
+            "a": 1
+          },
+          "9002:2": {
+            "r": 0.8313725590705872,
+            "g": 0.8313725590705872,
+            "b": 0.8313725590705872,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:9002:15375",
+        "name": "bg/toggle-knob",
+        "type": "COLOR",
+        "collectionId": "VariableCollectionId:6363:15483",
+        "values": {
+          "6363:0": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "9002:2": {
+            "r": 0.12156862765550613,
+            "g": 0.12156862765550613,
+            "b": 0.12156862765550613,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:9002:15376",
+        "name": "text/heading",
+        "type": "COLOR",
+        "collectionId": "VariableCollectionId:6363:15483",
+        "values": {
+          "6363:0": {
+            "r": 0.1882352977991104,
+            "g": 0.18039216101169586,
+            "b": 0.18431372940540314,
+            "a": 1
+          },
+          "9002:2": {
+            "r": 0.9411764740943909,
+            "g": 0.9411764740943909,
+            "b": 0.9411764740943909,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:9002:15381",
+        "name": "bg/control",
+        "type": "COLOR",
+        "collectionId": "VariableCollectionId:6363:15483",
+        "values": {
+          "6363:0": {
+            "r": 0.9607843160629272,
+            "g": 0.9607843160629272,
+            "b": 0.9607843160629272,
+            "a": 1
+          },
+          "9002:2": {
+            "r": 0.13725490868091583,
+            "g": 0.13725490868091583,
+            "b": 0.13725490868091583,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:9002:15382",
+        "name": "bg/avatar-placeholder",
+        "type": "COLOR",
+        "collectionId": "VariableCollectionId:6363:15483",
+        "values": {
+          "6363:0": {
+            "r": 0.8509804010391235,
+            "g": 0.8509804010391235,
+            "b": 0.8509804010391235,
+            "a": 1
+          },
+          "9002:2": {
+            "r": 0.3019607961177826,
+            "g": 0.3019607961177826,
+            "b": 0.3019607961177826,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:9002:15383",
+        "name": "text/shortcut",
+        "type": "COLOR",
+        "collectionId": "VariableCollectionId:6363:15483",
+        "values": {
+          "6363:0": {
+            "r": 0.20000000298023224,
+            "g": 0.19111111760139465,
+            "b": 0.19555556774139404,
+            "a": 1
+          },
+          "9002:2": {
+            "r": 0.8274509906768799,
+            "g": 0.8274509906768799,
+            "b": 0.8274509906768799,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:9002:15384",
+        "name": "text/navigation",
+        "type": "COLOR",
+        "collectionId": "VariableCollectionId:6363:15483",
+        "values": {
+          "6363:0": {
+            "r": 0.3294117748737335,
+            "g": 0.33725491166114807,
+            "b": 0.38823530077934265,
+            "a": 1
+          },
+          "9002:2": {
+            "r": 0.7372549176216125,
+            "g": 0.7372549176216125,
+            "b": 0.7372549176216125,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:9002:15385",
+        "name": "bg/control-soft",
+        "type": "COLOR",
+        "collectionId": "VariableCollectionId:6363:15483",
+        "values": {
+          "6363:0": {
+            "r": 0.7803921699523926,
+            "g": 0.7647058963775635,
+            "b": 0.772549033164978,
+            "a": 1
+          },
+          "9002:2": {
+            "r": 0.3960784375667572,
+            "g": 0.3960784375667572,
+            "b": 0.3960784375667572,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:9002:15386",
+        "name": "bg/sidebar",
+        "type": "COLOR",
+        "collectionId": "VariableCollectionId:6363:15483",
+        "values": {
+          "6363:0": {
+            "r": 0.9803921580314636,
+            "g": 0.9764705896377563,
+            "b": 0.9764705896377563,
+            "a": 1
+          },
+          "9002:2": {
+            "r": 0.10980392247438431,
+            "g": 0.10980392247438431,
+            "b": 0.10980392247438431,
+            "a": 1
+          }
+        }
+      },
+      {
+        "id": "VariableID:9002:15387",
+        "name": "border/sidebar",
+        "type": "COLOR",
+        "collectionId": "VariableCollectionId:6363:15483",
+        "values": {
+          "6363:0": {
+            "r": 0.9254902005195618,
+            "g": 0.9176470637321472,
+            "b": 0.9215686321258545,
+            "a": 1
+          },
+          "9002:2": {
+            "r": 0.20392157137393951,
+            "g": 0.20392157137393951,
+            "b": 0.20392157137393951,
+            "a": 1
+          }
+        }
+      }
+    ],
+    "textStyles": []
+  },
+  "typography": [
+    {
+      "id": "6363:15516",
+      "name": "button",
+      "children": [
+        {
+          "id": "6363:15515",
+          "name": "State=Default, Type=Default, Action=False",
+          "type": "COMPONENT"
+        },
+        {
+          "id": "6580:59295",
+          "name": "State=Default, Type=Default, Action=True",
+          "type": "COMPONENT"
+        },
+        {
+          "id": "6739:34502",
+          "name": "State=Default, Type=Select, Action=True",
+          "type": "COMPONENT"
+        },
+        {
+          "id": "6739:34525",
+          "name": "State=Pressed, Type=Select, Action=True",
+          "type": "COMPONENT"
+        },
+        {
+          "id": "6414:4449",
+          "name": "State=Default, Type=Gost, Action=False",
+          "type": "COMPONENT"
+        },
+        {
+          "id": "6363:15520",
+          "name": "State=Pressed, Type=Default, Action=False",
+          "type": "COMPONENT"
+        },
+        {
+          "id": "6580:59298",
+          "name": "State=Pressed, Type=Default, Action=True",
+          "type": "COMPONENT"
+        },
+        {
+          "id": "6414:4452",
+          "name": "State=Pressed, Type=Gost, Action=False",
+          "type": "COMPONENT"
+        }
+      ],
+      "text": [
+        {
+          "id": "6363:15491",
+          "text": "Action ",
+          "runs": [
+            {
+              "fontName": {
+                "family": "Chip Text Variable",
+                "style": "Regular",
+                "variationSettings": {
+                  "wght": 460,
+                  "ital": 0
+                }
+              },
+              "fontSize": 13,
+              "fontWeight": 460,
+              "lineHeight": {
+                "unit": "PIXELS",
+                "value": 16
+              },
+              "letterSpacing": {
+                "unit": "PIXELS",
+                "value": 0.10000000149011612
+              }
+            }
+          ]
+        },
+        {
+          "id": "6580:59297",
+          "text": "Action ",
+          "runs": [
+            {
+              "fontName": {
+                "family": "Chip Text Variable",
+                "style": "Regular",
+                "variationSettings": {
+                  "wght": 460,
+                  "ital": 0
+                }
+              },
+              "fontSize": 13,
+              "fontWeight": 460,
+              "lineHeight": {
+                "unit": "PIXELS",
+                "value": 16
+              },
+              "letterSpacing": {
+                "unit": "PIXELS",
+                "value": 0.10000000149011612
+              }
+            }
+          ]
+        },
+        {
+          "id": "6739:34504",
+          "text": "Action ",
+          "runs": [
+            {
+              "fontName": {
+                "family": "Chip Text Variable",
+                "style": "Regular",
+                "variationSettings": {
+                  "wght": 460,
+                  "ital": 0
+                }
+              },
+              "fontSize": 13,
+              "fontWeight": 460,
+              "lineHeight": {
+                "unit": "PIXELS",
+                "value": 16
+              },
+              "letterSpacing": {
+                "unit": "PIXELS",
+                "value": 0.10000000149011612
+              }
+            }
+          ]
+        },
+        {
+          "id": "6739:34527",
+          "text": "Action ",
+          "runs": [
+            {
+              "fontName": {
+                "family": "Chip Text Variable",
+                "style": "Regular",
+                "variationSettings": {
+                  "wght": 460,
+                  "ital": 0
+                }
+              },
+              "fontSize": 13,
+              "fontWeight": 460,
+              "lineHeight": {
+                "unit": "PIXELS",
+                "value": 16
+              },
+              "letterSpacing": {
+                "unit": "PIXELS",
+                "value": 0.10000000149011612
+              }
+            }
+          ]
+        },
+        {
+          "id": "6414:4451",
+          "text": "Action ",
+          "runs": [
+            {
+              "fontName": {
+                "family": "Chip Text Variable",
+                "style": "Regular",
+                "variationSettings": {
+                  "wght": 460,
+                  "ital": 0
+                }
+              },
+              "fontSize": 13,
+              "fontWeight": 460,
+              "lineHeight": {
+                "unit": "PIXELS",
+                "value": 16
+              },
+              "letterSpacing": {
+                "unit": "PIXELS",
+                "value": 0.10000000149011612
+              }
+            }
+          ]
+        },
+        {
+          "id": "6363:15522",
+          "text": "Action ",
+          "runs": [
+            {
+              "fontName": {
+                "family": "Chip Text Variable",
+                "style": "Regular",
+                "variationSettings": {
+                  "wght": 460,
+                  "ital": 0
+                }
+              },
+              "fontSize": 13,
+              "fontWeight": 460,
+              "lineHeight": {
+                "unit": "PIXELS",
+                "value": 16
+              },
+              "letterSpacing": {
+                "unit": "PIXELS",
+                "value": 0.10000000149011612
+              }
+            }
+          ]
+        },
+        {
+          "id": "6580:59300",
+          "text": "Action ",
+          "runs": [
+            {
+              "fontName": {
+                "family": "Chip Text Variable",
+                "style": "Regular",
+                "variationSettings": {
+                  "wght": 460,
+                  "ital": 0
+                }
+              },
+              "fontSize": 13,
+              "fontWeight": 460,
+              "lineHeight": {
+                "unit": "PIXELS",
+                "value": 16
+              },
+              "letterSpacing": {
+                "unit": "PIXELS",
+                "value": 0.10000000149011612
+              }
+            }
+          ]
+        },
+        {
+          "id": "6414:4454",
+          "text": "Action ",
+          "runs": [
+            {
+              "fontName": {
+                "family": "Chip Text Variable",
+                "style": "Regular",
+                "variationSettings": {
+                  "wght": 460,
+                  "ital": 0
+                }
+              },
+              "fontSize": 13,
+              "fontWeight": 460,
+              "lineHeight": {
+                "unit": "PIXELS",
+                "value": 16
+              },
+              "letterSpacing": {
+                "unit": "PIXELS",
+                "value": 0.10000000149011612
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9003:63811",
+      "name": "chat_window",
+      "children": [
+        {
+          "id": "9003:64078",
+          "name": "Rectangle 34625635",
+          "type": "RECTANGLE"
+        },
+        {
+          "id": "9003:64079",
+          "name": "icon",
+          "type": "INSTANCE"
+        },
+        {
+          "id": "9003:64048",
+          "name": "Text Area",
+          "type": "FRAME"
+        },
+        {
+          "id": "9003:64056",
+          "name": "Text Area",
+          "type": "FRAME"
+        },
+        {
+          "id": "9003:64182",
+          "name": "Text Area",
+          "type": "FRAME"
+        },
+        {
+          "id": "9003:64090",
+          "name": "Text Area",
+          "type": "FRAME"
+        }
+      ],
+      "text": [
+        {
+          "id": "9003:64049",
+          "text": "Write a message",
+          "runs": [
+            {
+              "fontName": {
+                "family": "Chip Text Variable",
+                "style": "Regular",
+                "variationSettings": {
+                  "wght": 460,
+                  "ital": 0
+                }
+              },
+              "fontSize": 14,
+              "fontWeight": 460,
+              "lineHeight": {
+                "unit": "PIXELS",
+                "value": 16
+              },
+              "letterSpacing": {
+                "unit": "PIXELS",
+                "value": 0.10000000149011612
+              }
+            }
+          ]
+        },
+        {
+          "id": "9003:64057",
+          "text": "Write a message",
+          "runs": [
+            {
+              "fontName": {
+                "family": "Chip Text Variable",
+                "style": "Regular",
+                "variationSettings": {
+                  "wght": 460,
+                  "ital": 0
+                }
+              },
+              "fontSize": 14,
+              "fontWeight": 460,
+              "lineHeight": {
+                "unit": "PIXELS",
+                "value": 16
+              },
+              "letterSpacing": {
+                "unit": "PIXELS",
+                "value": 0.10000000149011612
+              }
+            }
+          ]
+        },
+        {
+          "id": "9003:64186",
+          "text": "Write a message",
+          "runs": [
+            {
+              "fontName": {
+                "family": "Chip Text Variable",
+                "style": "Regular",
+                "variationSettings": {
+                  "wght": 460,
+                  "ital": 0
+                }
+              },
+              "fontSize": 14,
+              "fontWeight": 460,
+              "lineHeight": {
+                "unit": "PIXELS",
+                "value": 16
+              },
+              "letterSpacing": {
+                "unit": "PIXELS",
+                "value": 0.10000000149011612
+              }
+            }
+          ]
+        },
+        {
+          "id": "9003:64094",
+          "text": "Write a message",
+          "runs": [
+            {
+              "fontName": {
+                "family": "Chip Text Variable",
+                "style": "Regular",
+                "variationSettings": {
+                  "wght": 460,
+                  "ital": 0
+                }
+              },
+              "fontSize": 13,
+              "fontWeight": 460,
+              "lineHeight": {
+                "unit": "PIXELS",
+                "value": 16
+              },
+              "letterSpacing": {
+                "unit": "PIXELS",
+                "value": 0.10000000149011612
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9003:63945",
+      "name": "chat_window",
+      "children": [
+        {
+          "id": "9003:64231",
+          "name": "Text Area",
+          "type": "FRAME"
+        },
+        {
+          "id": "9014:409",
+          "name": "Text Area",
+          "type": "FRAME"
+        },
+        {
+          "id": "9011:366",
+          "name": "Text Area",
+          "type": "FRAME"
+        }
+      ],
+      "text": [
+        {
+          "id": "9003:64235",
+          "text": "Write a message",
+          "runs": [
+            {
+              "fontName": {
+                "family": "Chip Text Variable",
+                "style": "Regular",
+                "variationSettings": {
+                  "wght": 460,
+                  "ital": 0
+                }
+              },
+              "fontSize": 13,
+              "fontWeight": 460,
+              "lineHeight": {
+                "unit": "PIXELS",
+                "value": 16
+              },
+              "letterSpacing": {
+                "unit": "PIXELS",
+                "value": 0.10000000149011612
+              }
+            }
+          ]
+        },
+        {
+          "id": "9014:414",
+          "text": "Write a message",
+          "runs": [
+            {
+              "fontName": {
+                "family": "Chip Text Variable",
+                "style": "Regular",
+                "variationSettings": {
+                  "wght": 460,
+                  "ital": 0
+                }
+              },
+              "fontSize": 13,
+              "fontWeight": 460,
+              "lineHeight": {
+                "unit": "PIXELS",
+                "value": 16
+              },
+              "letterSpacing": {
+                "unit": "PIXELS",
+                "value": 0.10000000149011612
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7083:16676",
+      "name": "nav_tem",
+      "children": [
+        {
+          "id": "7083:16675",
+          "name": "Property 1=Default",
+          "type": "COMPONENT"
+        },
+        {
+          "id": "9017:383",
+          "name": "Property 1=Me",
+          "type": "COMPONENT"
+        },
+        {
+          "id": "7083:90861",
+          "name": "Property 1=Section",
+          "type": "COMPONENT"
+        },
+        {
+          "id": "7086:16384",
+          "name": "Property 1=2 level",
+          "type": "COMPONENT"
+        }
+      ],
+      "text": [
+        {
+          "id": "7083:16672",
+          "text": "Operator chat",
+          "runs": [
+            {
+              "fontName": {
+                "family": "Chip Text Variable",
+                "style": "Regular",
+                "variationSettings": {
+                  "wght": 460,
+                  "ital": 0
+                }
+              },
+              "fontSize": 13,
+              "fontWeight": 460,
+              "lineHeight": {
+                "unit": "PIXELS",
+                "value": 16
+              },
+              "letterSpacing": {
+                "unit": "PIXELS",
+                "value": 0.10000000149011612
+              }
+            }
+          ]
+        },
+        {
+          "id": "7083:16677",
+          "text": "Lets create a one simple way of",
+          "runs": [
+            {
+              "fontName": {
+                "family": "Chip Text Variable",
+                "style": "Regular",
+                "variationSettings": {
+                  "wght": 460,
+                  "ital": 0
+                }
+              },
+              "fontSize": 13,
+              "fontWeight": 460,
+              "lineHeight": {
+                "unit": "PIXELS",
+                "value": 16
+              },
+              "letterSpacing": {
+                "unit": "PIXELS",
+                "value": 0.10000000149011612
+              }
+            }
+          ]
+        },
+        {
+          "id": "7083:83884",
+          "text": "RECENT",
+          "runs": [
+            {
+              "fontName": {
+                "family": "Chip Mono",
+                "style": "Regular"
+              },
+              "fontSize": 10,
+              "fontWeight": 400,
+              "lineHeight": {
+                "unit": "PIXELS",
+                "value": 10
+              },
+              "letterSpacing": {
+                "unit": "PIXELS",
+                "value": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": "7086:16382",
+          "text": "Session name",
+          "runs": [
+            {
+              "fontName": {
+                "family": "Chip Text Variable",
+                "style": "Regular",
+                "variationSettings": {
+                  "wght": 460,
+                  "ital": 0
+                }
+              },
+              "fontSize": 13,
+              "fontWeight": 460,
+              "lineHeight": {
+                "unit": "PIXELS",
+                "value": 16
+              },
+              "letterSpacing": {
+                "unit": "PIXELS",
+                "value": 0.10000000149011612
+              }
+            }
+          ]
+        },
+        {
+          "id": "7086:16383",
+          "text": "2546",
+          "runs": [
+            {
+              "fontName": {
+                "family": "Chip Mono",
+                "style": "Regular"
+              },
+              "fontSize": 10,
+              "fontWeight": 400,
+              "lineHeight": {
+                "unit": "PIXELS",
+                "value": 10
+              },
+              "letterSpacing": {
+                "unit": "PIXELS",
+                "value": 0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7086:16954",
+      "name": "Message item",
+      "textCount": 16,
+      "recipes": [
+        {
+          "fontName": {
+            "family": "Chip Text Variable",
+            "style": "Semibold",
+            "variationSettings": {
+              "wght": 460,
+              "ital": 0
+            }
+          },
+          "fontSize": 13,
+          "fontWeight": 460,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 20
+          },
+          "letterSpacing": {
+            "unit": "PIXELS",
+            "value": 0
+          },
+          "nodeId": "7086:16958",
+          "example": "Hi, can you help me with itHi, can you help me with it ",
+          "count": 9
+        },
+        {
+          "fontName": {
+            "family": "Chip Text Variable",
+            "style": "Medium",
+            "variationSettings": {
+              "wght": 520,
+              "ital": 0
+            }
+          },
+          "fontSize": 9.899998664855957,
+          "fontWeight": 520,
+          "lineHeight": {
+            "unit": "AUTO"
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "nodeId": "I7086:16977;6387:2885",
+          "example": "M",
+          "count": 2
+        },
+        {
+          "fontName": {
+            "family": "Chip Mono",
+            "style": "Regular"
+          },
+          "fontSize": 10,
+          "fontWeight": 400,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 10
+          },
+          "letterSpacing": {
+            "unit": "PIXELS",
+            "value": 0
+          },
+          "nodeId": "7086:16984",
+          "example": "PERSON NAME",
+          "count": 4
+        },
+        {
+          "fontName": {
+            "family": "Chip Text Variable",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 650,
+              "ital": 0
+            }
+          },
+          "fontSize": 13,
+          "fontWeight": 650,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 20
+          },
+          "letterSpacing": {
+            "unit": "PIXELS",
+            "value": 0
+          },
+          "nodeId": "7086:16996",
+          "example": "Metrics discussion",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "7086:20043",
+      "name": "Page",
+      "textCount": 4,
+      "recipes": [
+        {
+          "fontName": {
+            "family": "Chip Text Variable",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 460,
+              "ital": 0
+            }
+          },
+          "fontSize": 13,
+          "fontWeight": 460,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 16
+          },
+          "letterSpacing": {
+            "unit": "PIXELS",
+            "value": 0.10000000149011612
+          },
+          "nodeId": "I9003:63709;7086:21170;7086:20934",
+          "example": "Agents deep dive",
+          "count": 2
+        },
+        {
+          "fontName": {
+            "family": "Chip Display Variable",
+            "style": "Semibold",
+            "variationSettings": {
+              "wght": 650,
+              "ital": 0
+            }
+          },
+          "fontSize": 40,
+          "fontWeight": 650,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 46
+          },
+          "letterSpacing": {
+            "unit": "PIXELS",
+            "value": 0
+          },
+          "nodeId": "I7086:20050;5676:572865",
+          "example": "Agents deep dive",
+          "count": 1
+        },
+        {
+          "fontName": {
+            "family": "Chip Text Variable",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 460,
+              "ital": 0
+            }
+          },
+          "fontSize": 15,
+          "fontWeight": 460,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 24
+          },
+          "letterSpacing": {
+            "unit": "PIXELS",
+            "value": 0.10000000149011612
+          },
+          "nodeId": "I7086:20061;5668:362638",
+          "example": "Implement the core functionality for this feature based",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "6387:2963",
+      "name": "top_bar",
+      "textCount": 3,
+      "recipes": [
+        {
+          "fontName": {
+            "family": "Chip Text Variable",
+            "style": "Regular",
+            "variationSettings": {
+              "wght": 460,
+              "ital": 0
+            }
+          },
+          "fontSize": 13,
+          "fontWeight": 460,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 16
+          },
+          "letterSpacing": {
+            "unit": "PIXELS",
+            "value": 0.10000000149011612
+          },
+          "nodeId": "I6596:65499;6596:65473",
+          "example": "Peter S",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "colorsCapturedAt": "2026-10-21"
+}

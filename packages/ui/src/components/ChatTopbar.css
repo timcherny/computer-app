@@ -1,0 +1,51 @@
+.computer-chat-topbar {
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
+  box-sizing: border-box;
+  width: 100%;
+  height: var(--computer-chat-topbar-height);
+  min-width: 0;
+  color: var(--computer-color-text-primary);
+  pointer-events: none;
+}
+.computer-chat-topbar__blur::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: linear-gradient(to bottom, var(--computer-color-bg-secondary) var(--computer-chat-topbar-fade-start), var(--computer-color-transparent));
+}
+.computer-chat-topbar__blur {
+  position: absolute;
+  z-index: 0;
+  inset: 0 0 auto;
+  height: var(--computer-chat-topbar-background-height);
+}
+.computer-chat-topbar__blur > span {
+  position: absolute;
+  inset: 0;
+  -webkit-backdrop-filter: blur(calc(var(--computer-chat-topbar-blur) * var(--topbar-blur-scale)));
+  backdrop-filter: blur(calc(var(--computer-chat-topbar-blur) * var(--topbar-blur-scale)));
+  mask-image: linear-gradient(to bottom, #000 var(--topbar-blur-fade-start), transparent var(--topbar-blur-fade-end));
+}
+.computer-chat-topbar__identity {
+  position: absolute;
+  z-index: 1;
+  top: var(--computer-chat-topbar-inset);
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: max(0px, calc(100% - 2 * (var(--computer-chat-topbar-actions-width) + 2 * var(--computer-chat-topbar-inset))));
+}
+.computer-chat-topbar__actions {
+  position: absolute;
+  z-index: 1;
+  top: var(--computer-chat-topbar-inset);
+  right: var(--computer-chat-topbar-inset);
+  display: flex;
+  gap: var(--computer-chat-topbar-action-gap);
+  pointer-events: auto;
+}
+.computer-chat-topbar :is(button, a) { -webkit-app-region: no-drag; }
+.computer-chat-topbar[data-canvas-control] { --computer-chat-topbar-actions-width: calc(3 * var(--computer-icon-button-size) + 2 * var(--computer-chat-topbar-action-gap)); }

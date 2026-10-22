@@ -1,0 +1,141 @@
+.computer-nav-item {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: var(--computer-nav-item-gap, var(--computer-space-1-5));
+  width: var(--computer-nav-item-width);
+  max-width: 100%;
+  min-width: 0;
+  min-height: var(--computer-nav-item-height);
+  margin: 0;
+  padding: var(--computer-space-1) var(--computer-space-2);
+  border: 0;
+  border-radius: var(--computer-radius-sm);
+  background: var(--computer-color-transparent);
+  color: var(--computer-color-text-primary);
+  text-align: start;
+  text-decoration: none;
+  cursor: pointer;
+  appearance: none;
+  transition: background-color var(--computer-duration-fast);
+}
+
+.computer-nav-item[data-selected] {
+  background: var(--computer-color-bg-pressed);
+}
+
+/* Keep the same row shape before and after selection. */
+.computer-nav-item:is([data-variant='default'], [data-variant='session']) {
+  border-radius: var(--computer-nav-item-selected-radius);
+}
+
+.computer-nav-item:focus-visible {
+  outline: var(--computer-focus-width) solid var(--computer-color-focus);
+  outline-offset: var(--computer-focus-offset);
+}
+
+.computer-nav-item[data-disabled] {
+  opacity: var(--computer-opacity-disabled);
+  cursor: not-allowed;
+}
+
+.computer-nav-item__avatar { display: flex; flex: none; }
+.computer-nav-item[data-expandable]:not([data-disabled]) { cursor: default; }
+.computer-nav-item__action,
+.computer-nav-item__body {
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+}
+.computer-nav-item__action {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: inherit;
+  background: var(--computer-color-transparent);
+  color: inherit;
+  text-align: start;
+  text-decoration: none;
+  cursor: pointer;
+  appearance: none;
+}
+.computer-nav-item__action:focus-visible {
+  outline: var(--computer-focus-width) solid var(--computer-color-focus);
+  outline-offset: var(--computer-focus-offset);
+}
+.computer-nav-item[data-disabled] .computer-nav-item__action { cursor: not-allowed; }
+/* The outer row already applies disabled opacity. */
+.computer-nav-item[data-disabled] .computer-avatar { opacity: 1; }
+.computer-nav-item__content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--computer-space-1);
+  min-width: 0;
+}
+
+.computer-nav-item__label,
+.computer-nav-item__description,
+.computer-nav-item__section-label {
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.computer-nav-item[data-variant='session'] {
+  min-height: var(--computer-nav-item-session-height);
+  padding-block: var(--computer-space-2);
+  padding-inline-start: var(--computer-nav-item-session-indent);
+}
+
+.computer-nav-item__count {
+  display: flex;
+  align-items: center;
+  flex: none;
+  min-width: var(--computer-nav-item-info-min-width);
+  height: var(--computer-nav-item-info-height);
+  max-width: 40%;
+}
+
+.computer-nav-item__count-value {
+  text-transform: uppercase;
+  width: 100%;
+  min-width: 0;
+  text-align: end;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+}
+
+.computer-nav-item[data-variant='me'] { min-height: var(--computer-nav-item-me-height); }
+.computer-nav-item[data-variant='collapsed'] {
+  width: var(--computer-nav-item-collapsed-size);
+  height: var(--computer-nav-item-collapsed-size);
+  min-height: var(--computer-nav-item-collapsed-size);
+  justify-content: center;
+  padding: var(--computer-space-1);
+  border-radius: var(--computer-nav-item-selected-radius);
+}
+.computer-nav-item[data-variant='section'] {
+  min-height: var(--computer-nav-item-section-height);
+  padding-block: 0;
+  border-radius: 0;
+  cursor: default;
+}
+
+.computer-nav-item__section-label {
+  padding-block: var(--computer-nav-item-section-padding);
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .computer-nav-item { transition: none; }
+}

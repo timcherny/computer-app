@@ -1,0 +1,77 @@
+.computer-nav-panel {
+  --computer-nav-item-width: 100%;
+  --computer-nav-item-session-height: var(--computer-nav-panel-session-height);
+  --computer-nav-item-section-height: var(--computer-nav-panel-section-height);
+  --computer-nav-item-me-height: var(--computer-nav-panel-profile-height);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex: none;
+  gap: var(--computer-space-1-5);
+  width: var(--computer-nav-panel-width);
+  max-width: 100%;
+  height: var(--computer-nav-panel-height);
+  min-width: 0;
+  min-height: 0;
+  padding-bottom: var(--computer-nav-panel-bottom-padding);
+  border-radius: var(--computer-nav-panel-radius) 0 0 var(--computer-nav-panel-radius);
+  background: var(--computer-color-bg-sidebar);
+  color: var(--computer-color-text-primary);
+  box-shadow: inset calc(-1 * var(--computer-border-width)) 0 0 var(--computer-color-border-sidebar);
+  overflow: hidden;
+}
+
+.computer-nav-panel__header {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: var(--computer-space-2);
+  height: var(--computer-nav-panel-header-height);
+  padding-inline: var(--computer-space-4);
+}
+
+.computer-nav-panel__scroll {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--computer-space-1-5);
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+}
+
+.computer-nav-panel__primary,
+.computer-nav-panel__items {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--computer-space-1-5);
+  flex: none;
+}
+
+.computer-nav-panel__primary,
+.computer-nav-panel__recent,
+.computer-nav-panel__footer { padding-inline: var(--computer-space-2); }
+.computer-nav-panel__recent { flex: none; min-width: 0; }
+.computer-nav-panel__items { margin-top: var(--computer-space-1-5); }
+.computer-nav-panel__footer { flex: none; }
+
+.computer-nav-panel :is(button, a, input, select) { -webkit-app-region: no-drag; }
+
+/* Only the host app opts into a draggable native titlebar. */
+.computer-nav-panel[data-desktop] .computer-nav-panel__header {
+  -webkit-app-region: drag;
+  user-select: none;
+}
+
+.computer-nav-panel[data-collapsed] {
+  --computer-nav-item-height: var(--computer-nav-item-collapsed-size);
+  width: var(--computer-nav-panel-collapsed-width);
+  padding-block: var(--computer-nav-panel-collapsed-padding);
+  padding-inline: 0;
+  align-items: center;
+}
+.computer-nav-panel[data-collapsed] .computer-nav-panel__header { display: none; }
+.computer-nav-panel[data-collapsed] .computer-nav-panel__scroll { width: calc(var(--computer-nav-item-collapsed-size) + 2 * var(--computer-space-2)); flex-shrink: 0; }
+.computer-nav-panel[data-collapsed] .computer-nav-panel__items { margin-top: 0; }
+.computer-nav-panel[data-collapsed] :is(.computer-nav-panel__primary, .computer-nav-panel__recent, .computer-nav-panel__footer) { padding-inline: var(--computer-space-2); }

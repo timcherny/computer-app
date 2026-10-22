@@ -1,0 +1,16 @@
+.computer-chat-header { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--computer-space-1-5); min-width: 0; max-width: 100%; filter: var(--computer-shadow-chat-header); }
+.computer-chat-header__chip { box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; max-width: 100%; min-width: 0; min-height: var(--computer-chat-title-height); padding: var(--computer-space-1-5) var(--computer-chat-title-padding-x); border-radius: var(--computer-radius-sm); background: var(--computer-color-bg-control); }
+.computer-chat-header__title { display: block; max-width: 100%; min-width: 0; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.computer-chat-header__avatar { --computer-avatar-size: var(--computer-chat-avatar-size); }
+.computer-chat-header[data-lines='two'] .computer-chat-header__chip { gap: var(--computer-chat-two-line-gap); padding-top: var(--computer-chat-two-line-padding-top); padding-bottom: var(--computer-chat-two-line-padding-bottom); }
+.computer-chat-header .computer-chat-header__subtitle { display: block; max-width: 100%; min-width: 0; text-align: center; text-transform: uppercase; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: var(--computer-chat-subtitle-line-height); text-box-trim: trim-both; text-box-edge: cap alphabetic; }
+/* This 40px design keeps the source 18px mark at its native size. */
+.computer-chat-header__avatar .computer-avatar__computer-mark {
+  inset: auto;
+  top: 50%;
+  left: 50%;
+  width: var(--computer-chat-avatar-mark-size);
+  height: var(--computer-chat-avatar-mark-size);
+  transform: translate(-50%, -50%);
+  background: var(--computer-chat-avatar-mark-color);
+}

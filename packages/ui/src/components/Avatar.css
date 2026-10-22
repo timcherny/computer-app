@@ -1,0 +1,99 @@
+.computer-avatar {
+  --computer-avatar-base-size: var(--computer-avatar-default-size);
+  position: relative;
+  display: inline-block;
+  flex: none;
+  width: var(--computer-avatar-size, var(--computer-avatar-base-size));
+  height: var(--computer-avatar-size, var(--computer-avatar-base-size));
+  vertical-align: middle;
+  font-family: var(--computer-font-sans);
+  font-size: calc(var(--computer-avatar-size, var(--computer-avatar-base-size)) * 0.375);
+  font-weight: var(--computer-font-weight-medium);
+  line-height: 1;
+  color: var(--computer-color-text-primary);
+}
+
+.computer-avatar__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.computer-avatar__portrait,
+.computer-avatar__member,
+.computer-avatar__team-art {
+  position: absolute;
+  overflow: hidden;
+  background: var(--computer-color-bg-avatar-placeholder);
+}
+
+.computer-avatar__portrait { inset: 0; }
+.computer-avatar__portrait,
+.computer-avatar__member,
+.computer-avatar__round { border-radius: var(--computer-radius-pill); }
+.computer-avatar__initials { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; user-select: none; }
+
+/* 18px mark centered in the 32px avatar, white in both themes. */
+.computer-avatar__computer-mark {
+  position: absolute;
+  inset: 21.875%;
+  background: var(--computer-avatar-mark-color);
+  mask: url('../assets/avatar/computer-mark.svg') center / contain no-repeat;
+}
+
+/* MP and Hover are bound to Figma's bg/secondary in both theme modes. */
+.computer-avatar__group-background {
+  position: absolute;
+  inset: 0;
+  background: var(--computer-color-bg-secondary);
+  mask: url('../assets/avatar/group-background.svg') center / contain no-repeat;
+}
+
+.computer-avatar[data-variant='mp-gray'] .computer-avatar__group-background {
+  background: var(--computer-color-bg-primary);
+  mask-image: url('../assets/avatar/group-gray-background.svg');
+}
+
+.computer-avatar__member[data-position='0'] { left: 12.5%; top: 15.625%; width: 43.75%; height: 43.75%; font-size: 0.4375em; }
+.computer-avatar__member[data-position='1'] { left: 62.5%; top: 34.375%; width: 31.25%; height: 31.25%; font-size: 0.3125em; }
+.computer-avatar__member[data-position='2'] { left: 40.625%; top: 65.625%; width: 21.875%; height: 21.875%; font-size: 0.21875em; }
+
+.computer-avatar[data-variant='team'] { --computer-avatar-base-size: var(--computer-avatar-team-size); }
+.computer-avatar__team-art {
+  left: 5.55555556%;
+  top: 6.06060606%;
+  width: 88.88888889%;
+  height: 88.88888889%;
+  border-radius: var(--computer-avatar-team-radius);
+}
+
+.computer-avatar__visual,
+.computer-avatar__hover { position: absolute; inset: 0; display: block; }
+.computer-avatar__hover { opacity: 0; pointer-events: none; }
+.computer-avatar__hover-background {
+  position: absolute;
+  inset: 0;
+  background: var(--computer-color-bg-secondary);
+  mask: url('../assets/avatar/hover-background.svg') center / contain no-repeat;
+}
+.computer-avatar__chevron {
+  position: absolute;
+  inset: 25%;
+  background: var(--computer-color-text-primary);
+  mask: url('../assets/avatar/chevron-down.svg') center / contain no-repeat;
+}
+.computer-avatar[data-variant='hover'] .computer-avatar__hover { opacity: 1; }
+
+button.computer-avatar {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  border-radius: var(--computer-radius-pill);
+  background: var(--computer-color-transparent);
+  cursor: pointer;
+}
+button.computer-avatar:focus-visible { outline: var(--computer-focus-width) solid var(--computer-color-focus); outline-offset: var(--computer-focus-offset); }
+button.computer-avatar:disabled { opacity: var(--computer-opacity-disabled); cursor: not-allowed; }
+button.computer-avatar:not(:disabled):is(:hover, :focus-visible) .computer-avatar__visual { opacity: 0; }
+button.computer-avatar:not(:disabled):is(:hover, :focus-visible) .computer-avatar__hover { opacity: 1; }

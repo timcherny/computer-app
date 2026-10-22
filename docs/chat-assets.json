@@ -1,0 +1,257 @@
+[
+  {
+    "file": "packages/ui/src/assets/icons/agent.svg",
+    "source": "/Users/timcherny/Computer/public/icons/agent.svg",
+    "sha256": "0f1bebe60eda7eef6982303306c7bc7308c88ad31082fe78e16b876ec82b3f36"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/arrow-up-large.svg",
+    "source": "/Users/timcherny/Computer/public/icons/arrow-up-large.svg",
+    "sha256": "96bd523f72a560b0a214cda07bff43e8e07d63218a586ccc42261eb3e1cb93af"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/bell.svg",
+    "source": "/Users/timcherny/Computer/public/icons/bell.svg",
+    "sha256": "410c45b153b4dfaffd78197e903d78a95120dc43eb90e2bd983b729d56202b16"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/button-plus.svg",
+    "source": "https://www.figma.com/api/mcp/asset/9c4c7fa6-afa8-408c-bd42-58219c5a3c82/b4212.svg",
+    "sha256": "74d23cc9d7eade2fe6019d174d76608ab6e053cdf87347ffe1e7016712026fab"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/canvas.svg",
+    "source": "/Users/timcherny/Computer/public/icons/canvas.svg",
+    "sha256": "8a1f71d1cb77eca7c8970e0e4dc55d2a4d6c08e2ed31f7c4c7c8633c88a448c1"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/check.svg",
+    "source": "/Users/timcherny/Computer/public/icons/check.svg",
+    "sha256": "7346c88afc9e8eb326a18f4558fd534a4e27551f052aaf1572fa743ccf61fedb"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/checked-empty.svg",
+    "source": "/Users/timcherny/Computer/public/icons/checked-empty.svg",
+    "sha256": "446d54d5d4ce5bce34fe23aa1bc0612b7240b917a1c783bf10c52fd2f6047a3a"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/checked.svg",
+    "source": "/Users/timcherny/Computer/public/icons/checked.svg",
+    "sha256": "dbf992db37a57e58595e0601899f73a3c5682238883c9980819c7569430ee4d8"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/chevron-down.svg",
+    "source": "/Users/timcherny/Computer/public/icons/chevron-down.svg",
+    "sha256": "0390a4f225bd662f5deb43389e5dedfe974bbcb9c04fafc3ab791caa2e2995e8"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/chevron-right.svg",
+    "source": "/Users/timcherny/Computer/public/icons/chevron-right.svg",
+    "sha256": "14a113c162c527573548d993b1c1c82f19960044164bf8f88ab022e4552452fd"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/claude.svg",
+    "source": "/Users/timcherny/Computer/public/icons/claude.svg",
+    "sha256": "6597b609a84ffd0f8acdc7fd07087c0adae17659b8f78d5efa705ba89ad9f431"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/codex.svg",
+    "source": "/Users/timcherny/Computer/public/icons/codex.svg",
+    "sha256": "cb15b0c1aff6c3c86eb440e4fdd89eab426d4cf055039e25daea9e7cfa448f70"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/computer-mark.svg",
+    "source": "/Users/timcherny/Computer/public/icons/computer-mark.svg",
+    "sha256": "c48cd744cab02282cc6f910dd3b87e3dee94d250fcbff9982e84a4dcd1f39ae5"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/cross.svg",
+    "source": "/Users/timcherny/Computer/public/icons/cross.svg",
+    "sha256": "ab689595f67dea82da719dd5e06c12df23a4acd6d3aa298547d63630cec72128"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/discover.svg",
+    "source": "/Users/timcherny/Computer/public/icons/discover.svg",
+    "sha256": "bbdff8f460669a41747ed5e81ea586784a404d196d838103690d6fece100992b"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/explore.svg",
+    "source": "/Users/timcherny/Computer/public/icons/explore.svg",
+    "sha256": "fa27ea9ccc628b121553268e2444fbfe5751b5d922b9006300fd61b7aec62b83"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/filter.svg",
+    "source": "/Users/timcherny/Computer/public/icons/filter.svg",
+    "sha256": "6331e6bde2dcf84420effb564fada58446e44f6568ecb157f29e1b27a38bdd42"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/house-with-horizontal-line.svg",
+    "source": "/Users/timcherny/Computer/public/icons/house-with-horizontal-line.svg",
+    "sha256": "5ff7a874478173e06db55e6b53d225ea572711da2382339aaba3934c3ca7a074"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/left-side-panel.svg",
+    "source": "/Users/timcherny/Computer/public/icons/left-side-panel.svg",
+    "sha256": "58853a4f729fd0a8020face38d3e86553b24a5e25456fc1198533f510f17d298"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/max.svg",
+    "source": "/Users/timcherny/Computer/public/icons/max.svg",
+    "sha256": "be29362101d3425d7565a82a52cab7b807010c00a4474d9c601357a069ba70c9"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/menu.svg",
+    "source": "https://www.figma.com/api/mcp/asset/3b179ace-c85a-4fcb-bbd2-d935c4037c42/240ee.svg",
+    "sha256": "0557aceb503014995c873519a20892e2dc7279acf5cbe4a14ef33658f87ad593"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/min.svg",
+    "source": "/Users/timcherny/Computer/public/icons/min.svg",
+    "sha256": "7b0cc69ce35971f3fc166e604541e762e8cc0ed93cdb65c8856bef29d99b7122"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/more.svg",
+    "source": "/Users/timcherny/Computer/public/icons/more.svg",
+    "sha256": "095a55ae6dd3ee2e7379723358468649d547a816b1b7368375a21b8dfde13ba3"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/plus-in-chat-bubble.svg",
+    "source": "/Users/timcherny/Computer/public/icons/plus-in-chat-bubble.svg",
+    "sha256": "664c1e97869f2d43467d4176bb7e8ed8c8623aa973cda5b79f504e5ae0e574d2"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/plus-large.svg",
+    "source": "/Users/timcherny/Computer/public/icons/plus-large.svg",
+    "sha256": "4694826d0a0ba3d2f93a1278fb4a83cd9d13a3ac5c60a87e6aff28863a8e0ab6"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/plus.svg",
+    "source": "/Users/timcherny/Computer/public/icons/plus.svg",
+    "sha256": "11352b5b150117fee9033731ba3423ac776d00e2eee49adcc814a0b6cfe7e140"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/rectangle-and-three-horizontal-lines.svg",
+    "source": "/Users/timcherny/Computer/public/icons/rectangle-and-three-horizontal-lines.svg",
+    "sha256": "2e91ea11dba66a1011822e592f691333e35c4cf8130bf0b407ede5057495b5c4"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/right-side-panel.svg",
+    "source": "/Users/timcherny/Computer/public/icons/right-side-panel.svg",
+    "sha256": "0fbc3900641f3a781269cd6604e0d03685b1bb5c6c0cf3f67611c2cd4820d30f"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/search.svg",
+    "source": "/Users/timcherny/Computer/public/icons/search.svg",
+    "sha256": "b9a2b6e0d9b59c669c99ce2cacd5aa464070fe0da0820087c680346c7f4352f5"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/two-squares-overlapping-with-plus.svg",
+    "source": "/Users/timcherny/Computer/public/icons/two-squares-overlapping-with-plus.svg",
+    "sha256": "a27913915ddb80131687831d098aad75dd570035805aa29a83297259eb3dad19"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/window.svg",
+    "source": "/Users/timcherny/Computer/public/icons/window.svg",
+    "sha256": "f3d310fc517e65ac11824fde2d14463846350a0f6335c69ac2b89414eba73c36"
+  },
+  {
+    "file": "packages/ui/src/assets/message-avatar/claude.svg",
+    "source": "/Users/timcherny/Computer/public/avatars/claude.svg",
+    "sha256": "352bd5948691c3262d9198583abc4bae1b90eb17e3803b97f25adf5d32f91efc"
+  },
+  {
+    "file": "packages/ui/src/assets/message-avatar/codex.svg",
+    "source": "/Users/timcherny/Computer/public/avatars/codex.svg",
+    "sha256": "2b41c9ef432b7e903a9171f4b2b5f9544bcc8cf53a3d9b1b6ccbfbef0090dc6b"
+  },
+  {
+    "file": "packages/ui/src/assets/message-avatar/computer-in-circle.svg",
+    "source": "/Users/timcherny/Computer/public/avatars/computer-in-circle.svg",
+    "sha256": "63c098b4f72b3066ca427210e6d75d3c01b5647ea8d07be9a1ceb50f93db8ec6"
+  },
+  {
+    "file": "packages/ui/src/assets/message-avatar/computer.svg",
+    "source": "/Users/timcherny/Computer/public/avatars/computer.svg",
+    "sha256": "42557c9a348e7944e709a2076adff86b57472d01485b406264f4c9086190e5ba"
+  },
+  {
+    "file": "packages/ui/src/assets/chat/bubble-tail-me.svg",
+    "source": "/Users/timcherny/Computer/public/chat/bubble-tail-me.svg",
+    "sha256": "e5298146f41f6f557b170f7ea024edca4fc3efda941e1fef85217b26888905db"
+  },
+  {
+    "file": "packages/ui/src/assets/chat/bubble-tail-person.svg",
+    "source": "/Users/timcherny/Computer/public/chat/bubble-tail-person.svg",
+    "sha256": "3774aebf8661097d875380391479dd210056f9d132806826bcd4f5f438b56b59"
+  },
+  {
+    "file": "packages/ui/stories/assets/message-avatar/default.jpg",
+    "source": "/Users/timcherny/Computer/public/avatars/default.jpg",
+    "sha256": "033a1fe6bc0c12f753f70ca83bbf97ca2aae959ee36bde6335d837c7d2dfdddb"
+  },
+  {
+    "file": "packages/ui/stories/assets/message-avatar/variant10.jpg",
+    "source": "/Users/timcherny/Computer/public/avatars/variant10.jpg",
+    "sha256": "c692733f420a74cacb2cabb987cbdc17a5f94c2c100f47ab4318997c2075dd4d"
+  },
+  {
+    "file": "packages/ui/stories/assets/message-avatar/variant11.jpg",
+    "source": "/Users/timcherny/Computer/public/avatars/variant11.jpg",
+    "sha256": "926b6550f3b4d80bd4fb5a091e38e2a610c5ec856cf59fadb5227e788c122bb7"
+  },
+  {
+    "file": "packages/ui/stories/assets/message-avatar/variant12.jpg",
+    "source": "/Users/timcherny/Computer/public/avatars/variant12.jpg",
+    "sha256": "7b927db95d29bec39c55a8b199ef0709f62e2052c1c457b910f695d36db792bd"
+  },
+  {
+    "file": "packages/ui/stories/assets/message-avatar/variant13.jpg",
+    "source": "/Users/timcherny/Computer/public/avatars/variant13.jpg",
+    "sha256": "aaf401ee315da14d0fb73a284e9a904d73b20bf67cb2a2b29d240238571df7b6"
+  },
+  {
+    "file": "packages/ui/stories/assets/message-avatar/variant14.jpg",
+    "source": "/Users/timcherny/Computer/public/avatars/variant14.jpg",
+    "sha256": "066ec072171140811f63bfdc0e1ea0c0d3ed73523f6536a4653f4c1ebd97482c"
+  },
+  {
+    "file": "packages/ui/stories/assets/message-avatar/variant15.jpg",
+    "source": "/Users/timcherny/Computer/public/avatars/variant15.jpg",
+    "sha256": "8e9b4f02c07580ff0bee42a3c123a7075df92fae2c9da5f2347dc09e12c41df9"
+  },
+  {
+    "file": "packages/ui/stories/assets/message-avatar/variant16.jpg",
+    "source": "/Users/timcherny/Computer/public/avatars/variant16.jpg",
+    "sha256": "3873698767cb8a186f03692e4af35c0d3d8119ba4e158d964e3e509390589482"
+  },
+  {
+    "file": "packages/ui/stories/assets/message-avatar/variant17.jpg",
+    "source": "/Users/timcherny/Computer/public/avatars/variant17.jpg",
+    "sha256": "923932d3d83f73a2ff051f08711499eb1de057622416c3fd142906b657993058"
+  },
+  {
+    "file": "packages/ui/stories/assets/message-avatar/variant2.jpg",
+    "source": "/Users/timcherny/Computer/public/avatars/variant2.jpg",
+    "sha256": "54b8c3a9896230d2c082be629394cc64cf8fd2fa670f439a391e234e3379ab02"
+  },
+  {
+    "file": "packages/ui/stories/assets/message-avatar/variant3.jpg",
+    "source": "/Users/timcherny/Computer/public/avatars/variant3.jpg",
+    "sha256": "3f4fd2ccab4aff615146f9885e3bcc0cd87907f88b16b14a0fbfcfac5d69b21f"
+  },
+  {
+    "file": "packages/ui/stories/assets/message-avatar/variant4.jpg",
+    "source": "/Users/timcherny/Computer/public/avatars/variant4.jpg",
+    "sha256": "2cc05b1d5dc11d181bb0311480024dd86d83798c38fe73d688fb6cc614ad7bd1"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/button-more.svg",
+    "source": "https://www.figma.com/api/mcp/asset/ac95cf47-1f9a-4206-b596-6f81ed20b484/d02bc.svg",
+    "sha256": "521b15ccef98e770b4a3967c289b755e95abbad359151977b474d8a2f3da0bcd"
+  },
+  {
+    "file": "packages/ui/src/assets/icons/button-canvas.svg",
+    "source": "https://www.figma.com/api/mcp/asset/ac95cf47-1f9a-4206-b596-6f81ed20b484/71919.svg",
+    "sha256": "19a1126475c6909ff8c4d598982c1de47c2e868aa8fe0db5f46a2eaa1bd64436"
+  }
+]

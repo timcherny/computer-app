@@ -1,0 +1,3 @@
+.computer-icon { position: relative; display: inline-flex; flex: none; align-items: center; justify-content: center; width: var(--computer-icon-size, 1rem); height: var(--computer-icon-size, 1rem); vertical-align: middle; }
+.computer-icon__frame { position: relative; flex: none; }
+.computer-icon__glyph { position: absolute; display: block; background: currentColor; mask-position: center; mask-repeat: no-repeat; mask-size: contain; }

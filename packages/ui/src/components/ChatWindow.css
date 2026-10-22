@@ -1,0 +1,41 @@
+.computer-chat-window { position: relative; isolation: isolate; display: flex; flex-direction: column; min-width: 0; min-height: 0; width: 100%; height: 100%; background: var(--computer-color-bg-secondary); color: var(--computer-color-text-primary); }
+.computer-chat-window__topbar { position: absolute; z-index: 1; inset: 0 0 auto; }
+/* Keep every message descendant below the complete header overlay, including its gradient and blur. */
+.computer-chat-window__scroll { position: relative; z-index: 0; flex: 1; min-height: 0; overflow: auto; scrollbar-width: thin; scrollbar-color: var(--computer-color-border-primary) var(--computer-color-transparent); overflow-anchor: none; }
+.computer-chat-window__scroll:focus-visible { outline: var(--computer-focus-width) solid var(--computer-color-focus); outline-offset: calc(-1 * var(--computer-focus-width)); }
+.computer-chat-window__messages { box-sizing: border-box; display: flex; flex-direction: column; gap: var(--computer-chat-message-gap); width: 100%; max-width: var(--computer-chat-content-width); padding: var(--computer-chat-topbar-height) var(--computer-space-5) calc(var(--computer-space-5) + var(--computer-chat-scroll-input-overlap)); margin-inline: auto; }
+/* The scroll edge sits 22px below the input's top edge; its last message still clears the input. */
+.computer-chat-window__composer { position: relative; z-index: 1; display: flex; justify-content: center; box-sizing: border-box; flex: none; width: 100%; max-width: var(--computer-chat-content-width); padding: var(--computer-space-3) var(--computer-space-5) var(--computer-space-5); margin-top: calc(-1 * (var(--computer-chat-scroll-input-overlap) + var(--computer-space-3))); margin-inline: auto; pointer-events: none; }
+@media (max-width: 480px) { .computer-chat-window { --computer-message-opposite-gutter: 2rem; } .computer-chat-window__messages, .computer-chat-window__composer { padding-inline: var(--computer-space-4); } }
+
+.computer-chat-window__composer > .computer-message-input { --message-width: 100%; min-width: 0; pointer-events: auto; }
+
+.computer-chat-window { container-type: inline-size; }
+.computer-chat-window__body { display: flex; flex: 1; min-height: 0; min-width: 0; }
+.computer-chat-window__thread { display: flex; flex-direction: column; flex: 1; min-width: 0; min-height: 0; }
+.computer-chat-window__properties { position: relative; z-index: 2; box-sizing: border-box; flex: none; width: calc(var(--computer-properties-width) + var(--computer-space-5)); margin-top: var(--computer-chat-properties-top); margin-left: var(--computer-chat-properties-gap); padding: 0 var(--computer-space-5) var(--computer-space-5) 0; overflow: auto; scrollbar-width: thin; }
+.computer-chat-window__properties[hidden] { display: none; }
+@container (width < 1000px) {
+  .computer-chat-window__properties { position: absolute; z-index: 2; top: var(--computer-chat-properties-top); right: var(--computer-space-3); width: var(--computer-properties-width); max-width: calc(100% - 2 * var(--computer-space-3)); max-height: calc(100% - var(--computer-chat-properties-top) - var(--computer-space-5)); margin: 0; padding: var(--computer-space-1-5); border-radius: var(--computer-radius-sm); background: var(--computer-color-bg-secondary); box-shadow: var(--computer-menu-shadow); }
+  .computer-chat-window__properties .computer-properties-nav__identity { display: none; }
+}
+@container (width >= 1000px) {
+  /* Extend history behind the fixed side panel, keeping messages in their original column. */
+  .computer-chat-window[data-properties-open] .computer-chat-window__thread {
+    --chat-properties-reserve: calc(var(--computer-properties-width) + var(--computer-space-5) + var(--computer-chat-properties-gap));
+  }
+  .computer-chat-window[data-properties-open] .computer-chat-window__scroll { width: calc(100% + var(--chat-properties-reserve)); }
+  .computer-chat-window[data-properties-open] .computer-chat-window__history-content { width: calc(100% - var(--chat-properties-reserve)); }
+  /* Leave the outer scrollbar reachable without moving the panel's content. */
+  .computer-chat-window[data-properties-open] .computer-chat-window__properties {
+    width: calc(var(--computer-properties-width) + var(--computer-space-5) - var(--computer-space-2));
+    margin-right: var(--computer-space-2);
+    padding-right: calc(var(--computer-space-5) - var(--computer-space-2));
+  }
+  .computer-chat-window[data-properties-open] .computer-chat-topbar__identity { visibility: hidden; }
+  .computer-chat-window[data-properties-open] .computer-chat-window__messages { padding-top: var(--computer-chat-properties-message-top); }
+  .computer-chat-window[data-properties-open] .computer-chat-topbar {
+    --computer-chat-topbar-height: var(--computer-chat-properties-message-top);
+    --computer-chat-topbar-background-height: var(--computer-chat-properties-message-top);
+  }
+}

@@ -1,0 +1,12 @@
+.computer-canvas-tab-item { position: relative; box-sizing: border-box; display: inline-flex; flex: none; width: var(--computer-canvas-tab-width); max-width: 100%; height: var(--computer-canvas-tabs-height); padding-inline: var(--computer-space-3); border-right: var(--computer-border-width) solid var(--computer-color-border-secondary); background: var(--computer-color-transparent); color: var(--computer-color-text-primary); }
+.computer-canvas-tab-item[data-selected] { gap: var(--computer-space-1-5); padding-inline: var(--computer-space-4); border-right: 0; background: var(--computer-color-bg-primary); }
+.computer-canvas-tab-item__select { display: flex; align-items: center; flex: 1; gap: var(--computer-space-1-5); min-width: 0; padding: 0; border: 0; appearance: none; background: var(--computer-color-transparent); color: inherit; text-align: start; cursor: pointer; -webkit-app-region: no-drag; }
+.computer-canvas-tab-item__contents { display: flex; flex: 1; min-width: 0; padding: var(--computer-space-1-5); }
+.computer-canvas-tab-item[data-selected] .computer-canvas-tab-item__contents { padding-inline: 0; }
+.computer-canvas-tab-item__label { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.computer-canvas-tab-item__close { display: none; align-self: stretch; align-items: center; justify-content: center; flex: none; padding: 0; border: 0; appearance: none; background: var(--computer-color-transparent); color: inherit; cursor: pointer; -webkit-app-region: no-drag; }
+.computer-canvas-tab-item:is(:hover, :focus-within):not([data-hover='false']) .computer-canvas-tab-item__close,
+.computer-canvas-tab-item[data-hover='true'] .computer-canvas-tab-item__close { display: inline-flex; }
+.computer-canvas-tab-item :is(button:focus-visible) { outline: var(--computer-focus-width) solid var(--computer-color-focus); outline-offset: calc(-1 * var(--computer-focus-width)); }
+.computer-canvas-tab-item[data-disabled] { opacity: var(--computer-opacity-disabled); }
+.computer-canvas-tab-item button:disabled { cursor: default; }

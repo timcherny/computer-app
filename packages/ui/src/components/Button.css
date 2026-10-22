@@ -1,0 +1,44 @@
+.computer-button {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--computer-space-1-5);
+  min-height: var(--computer-control-md);
+  padding: var(--computer-space-1-5) var(--computer-space-3);
+  border: 0;
+  border-radius: var(--computer-radius-pill);
+  background: var(--computer-color-accent);
+  color: var(--computer-color-on-accent);
+  font-family: var(--computer-type-label-family);
+  font-size: var(--computer-type-label-size);
+  font-weight: var(--computer-type-label-weight);
+  line-height: var(--computer-type-label-line-height);
+  letter-spacing: var(--computer-type-label-tracking);
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color var(--computer-duration-fast), color var(--computer-duration-fast);
+}
+
+.computer-button:is(:hover, :active):not(:disabled) { background: var(--computer-color-accent-hover); }
+.computer-button:focus-visible { outline: var(--computer-focus-width) solid var(--computer-color-focus); outline-offset: var(--computer-focus-offset); }
+.computer-button:disabled { opacity: var(--computer-opacity-disabled); cursor: not-allowed; }
+.computer-button[data-variant='secondary'] {
+  background: var(--computer-color-bg-primary);
+  color: var(--computer-color-text-primary);
+  border-radius: var(--computer-radius-sm);
+}
+.computer-button[data-variant='ghost'] {
+  background: var(--computer-color-transparent);
+  color: var(--computer-color-text-primary);
+  border-radius: var(--computer-radius-sm);
+}
+.computer-button[data-variant='secondary']:is(:hover, :active):not(:disabled),
+.computer-button[data-variant='ghost']:is(:hover, :active):not(:disabled) { background: var(--computer-color-bg-pressed); }
+.computer-button[data-size='sm'] { min-height: var(--computer-control-sm); padding: var(--computer-space-1) var(--computer-space-2); }
+.computer-button[data-size='lg'] { min-height: var(--computer-control-lg); padding: var(--computer-space-2) var(--computer-space-4); }
+
+@media (prefers-reduced-motion: reduce) {
+  .computer-button { transition: none; }
+}

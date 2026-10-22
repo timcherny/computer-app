@@ -1,0 +1,5 @@
+.computer-icon-button { box-sizing: border-box; display: inline-flex; flex: none; align-items: center; justify-content: center; width: var(--computer-icon-button-size); height: var(--computer-icon-button-size); padding: var(--computer-space-1-5); border: 0; border-radius: var(--computer-radius-sm); background: var(--computer-color-transparent); color: var(--computer-color-text-primary); cursor: pointer; appearance: none; }
+.computer-icon-button[data-variant='default'] { border-radius: var(--computer-radius-xs); background: var(--computer-color-bg-primary); }
+.computer-icon-button:not(:disabled):active, .computer-icon-button[data-state='pressed']:not(:disabled) { background: var(--computer-color-bg-pressed); }
+.computer-icon-button:disabled { color: var(--computer-color-text-secondary); cursor: not-allowed; }
+.computer-icon-button:focus-visible { outline: var(--computer-focus-width) solid var(--computer-color-focus); outline-offset: var(--computer-focus-offset); }

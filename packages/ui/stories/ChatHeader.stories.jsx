@@ -1,0 +1,16 @@
+import { ChatHeader } from '@computer/ui';
+import { ChatThemes } from './chatFixtures.jsx';
+import memberLeft from './assets/avatar/member-left.png';
+import memberRight from './assets/avatar/member-right.jpg';
+import memberBottom from './assets/avatar/member-bottom.png';
+const multipersonAvatar = { variant: 'mp', members: [{ src: memberLeft }, { src: memberRight }, { src: memberBottom }] };
+export default {title:'Components/ChatHeader',component:ChatHeader,tags:['autodocs'],args:{title:'Computer'},parameters:{docs:{description:{component:'40px avatar above a title chip, separated by 6px, with the Figma OP_Elevation_Pop shadow. Single-line chips are 28px tall; subtitle selects the 40px two-line Figma variant, with an uppercase caption inside the chip. Reuses Avatar and Text. The host supplies the conversation title and avatar. Multiperson avatars automatically use the MP Gray variant; member images are preserved.'}}}};
+export const Default = {};
+export const TwoLines = { args: { subtitle: '20 people' } };
+export const TwoLinesBothThemes = { render: () => <ChatThemes><ChatHeader title="Computer team" subtitle="20 people" avatar={{ variant: 'team' }} /></ChatThemes> };
+export const Team = { args: { title: 'Computer team', subtitle: '20 people', avatar: { variant: 'team' } } };
+export const TwoPeople = { args: { title: 'Ben & Gil', subtitle: '2 people', avatar: { variant: 'mp', members: [{ initials: 'B' }, { initials: 'G' }] } } };
+export const Multiperson = { args: { title: 'Ben & Gil', avatar: multipersonAvatar } };
+export const MultipersonBothThemes = { render: () => <ChatThemes><ChatHeader title="Ben & Gil" avatar={multipersonAvatar} /></ChatThemes> };
+export const BothThemes={render:()=> <ChatThemes><ChatHeader/></ChatThemes>};
+export const LongTitle={args:{title:'Onboarding review with the Computer team'},render:args=><div style={{width:200,maxWidth:'100%'}}><ChatHeader {...args}/></div>};
